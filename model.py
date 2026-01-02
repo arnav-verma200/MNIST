@@ -22,4 +22,5 @@ sgd_clf = SGDClassifier(random_state=42)
 sgd_clf.fit(X_train_scaled, y_train_5)
 
 joblib.dump(sgd_clf, "mnist_5_classifier.pkl")
+joblib.dump(scaler, "scaler.pkl")
 print("MNIST 5-vs-not-5 model saved")
